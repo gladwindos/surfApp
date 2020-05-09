@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://admin:admin@cluster0-fte1m.mongodb.net/test?retryWrites=true&w=majority",
+    "weatherAPIKey": "3946f611b190fa0ade05fcbaf79bd07f"
+}
