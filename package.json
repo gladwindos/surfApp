@@ -4,7 +4,10 @@
     "description": "",
     "main": "server/server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "cd server && node server",
+        "server": "cd server && nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "repository": {
         "type": "git",
@@ -15,5 +18,9 @@
     "bugs": {
         "url": "https://github.com/gladwindos/surfApp/issues"
     },
-    "homepage": "https://github.com/gladwindos/surfApp#readme"
+    "homepage": "https://github.com/gladwindos/surfApp#readme",
+    "dependencies": {
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.3"
+    }
 }
